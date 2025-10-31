@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="ERP.Mobile.MainPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+
+    <ScrollView>
+        <VerticalStackLayout Spacing="25" Padding="30,0" VerticalOptions="Center">
+            
+            <Image
+                Source="dotnet_bot.png"
+                SemanticProperties.Description="Cute dot net bot waving hi to you!"
+                HeightRequest="200"
+                HorizontalOptions="Center" />
+
+            <Label
+                Text="¡Bienvenido a ERP Mobile!"
+                FontSize="32"
+                HorizontalOptions="Center" />
+
+            <Label
+                Text="Sistema de gestión empresarial móvil"
+                FontSize="18"
+                HorizontalOptions="Center" />
+
+            <Button
+                x:Name="ProductosBtn"
+                Text="Ver Productos"
+                FontAttributes="Bold"
+                SemanticProperties.Hint="Navegar a la página de productos"
+                Clicked="OnProductosBtnClicked"
+                HorizontalOptions="Center" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
